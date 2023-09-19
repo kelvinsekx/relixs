@@ -1,0 +1,14 @@
+.hotlink {
+  padding: 0.15rem 0;
+  margin-top: 0.15rem;
+}
+
+.hotlink span {
+  padding: 0 0.5rem;
+}
+
+.hotlink b {
+  font-size: x-small;
+  color: var(--color-fire);
+  font-weight: 900;
+}
