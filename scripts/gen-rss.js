@@ -11,7 +11,7 @@ async function generate() {
   });
 
   const posts = await fs.readdir(
-    path.join(__dirname, "..", "src/pages", "posts")
+    path.join(__dirname, "..", "pages", "posts")
   );
 
   await Promise.all(
