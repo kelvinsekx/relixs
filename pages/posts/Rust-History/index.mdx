@@ -1,0 +1,226 @@
+---
+type: posts
+title: The History of Rust
+date: 2021-03-18
+tag: Rust
+---
+
+import { BlockQuote } from "./../../../components/BlockQuote/index.blockquote";
+
+# The History of Rust
+
+Rust is a programming language as in the case of HTML, CSS, JS, PHP et cetera ([HTML and CSS are controversial especially with argument for and against](https://www.reddit.com/r/webdev/comments/tio5jn/is_html_a_programming_language_your_opinion/i1fw77i/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)).
+
+[Unlike languages like JavaScript that happened in the span of a week](https://www.quora.com/Javascript-was-created-in-10-days-How-can-one-of-the-largest-and-most-popular-languages-used-today-be-created-in-just-10-days), Rust had an enormous long period of development before it was used or accessible to the public. It was a research work that has turned out to be worth it 🧀.
+
+<BlockQuote
+  content={`It took a long time to figure out Rust ought to work`}
+  author={`Niko Matsakis`}
+></BlockQuote>
+
+## Why you should care about Rust's history?
+
+History empowers us to appreciate the past, present and give a hint on how the future may turn out to become.
+From the day I began inquiring into the past of Rust, I was empowered with clarity of whys, appreciate it syntaxes and philosophies, and why the language matters. I hope by the end of reading this article you are as illuminated as well as I was.
+
+## The Past happened in Eras
+
+According to Steve Klabnik, Rust has had 5 stages. In this article, our discussion will beat around these lines. Below are the stages as listed according to Steve:
+
+- The Personal Years, 2006 - 2009
+- The Graydon Years, 2010 - 2013
+- The Type System Years, 2012 - 2014
+- The Release Year, 2015 - 2016
+- Production Years, 2017 - present
+
+## Everything is an iteration
+
+Rust has evolved in terms of its features and syntaxes across each era, but basically the exact same language in terms of its goals and missions - Compilation, Speed, System and Safety.
+
+The process that gave birth to Rust features and syntaxes has been characterized by identification of a fit feature, implementing them and an awaiting period of experimentation to see if the feature should remain. This affirms the conclusion that Rust came out from Research and Development experimentation in Mozilla.
+
+![An Image showing Rust Feature Iteration](./Rust's-Feature-Iteration.png)
+
+## The Personal Years (2006 - 2009) - Crude Development Times
+
+It was meant to be a compiled, concurrent, safe, systems programming language. This era is defined as Personal because Greydon Hoare - original creator of Rust - was developing this in his spare time. He got the motivation to writing this new programming language because of his experience with Elevation Crash in the building he lived.
+
+## The Graydon Years (2010 - 2013) - Author's Recognition and Project Momentum Times
+
+In 2009, Mozilla started sponsoring Rust, with Graydon becoming a BDFL - Benevolent for Dictator for Life - style figure. And then the team slowly grew.
+
+## The Type system Years (2012 - 2014) - Author's Step Asides Times
+
+Employment of people with PhDs to improve Rust type safe system. As the type system grew, more and more part of the language moved to the libraries.
+
+And Graydon steps-down from the project.
+
+<BlockQuote
+  content={`I burnt out; ran out of emotional energy to be effective in my role as technical lead for the project mid way through 2013 (at the tail end of my divorce, and while recovering from a surgery -- not a great time in my life), so I took a break, switched off the Rust team, took a year to work on lower-profile and less-time-sensitive projects inside Mozilla (test-farm automation for Firefox-on-Android at first; later the wifi-and-cell geolocation service), eventually quit Mozilla and worked for a completely unrelated payment network (Stellar)`}
+  author={`Graydon Hoare, https://old.reddit.com/r/rust/comments/7qels2/i_wonder_why_graydon_hoare_the_author_of_rust/`}
+></BlockQuote>
+
+## The Release Year, 2015 - 2016
+
+This was the year 1.0 of Rust was available for heavy public use with an assurance of no sudden change to the language that won't be backward compatible. This promise has had the good and bad sides of it. For example, the double pattern of Generics among many.
+
+The use of where for Generics happened after the release year. Originally, Rust approach to things would have been to keep on and let go of the other one that was less better. But because of the promise of forever compatibility from 2016, we kinda lost the magic of not keeping things we no longer find useful.
+
+## The Production Year, 2016+
+
+These are the years where Rust began being used on production apps outside Mozilla
+
+## Early Assumptions
+
+- Keywords can't be longer than 5 characters.
+
+  For example, in the early days the keyword "return" was written as in "ret"
+
+  ```Rust
+  fn max(int x, int y)-> int {
+      if (x > y) {
+          ret x;
+      } else {
+          ret y;
+      }
+  }
+  ```
+
+- types were before variable like C and C#
+
+  ```Rust
+      int x = 5;
+      string name = "Kelvinsekx"
+  ```
+
+- Explicit Object orientation with the obj keyword
+  ```rust
+      obj counter(int i) {
+          fn incr() {
+              i += 1;
+          }
+
+          fn get()-> int {
+              ret i
+          }
+      }
+  ```
+- auto keyword for explicit type inference
+
+  ```rust
+      auto name = "Kelvinsekx"
+  ```
+
+- Type generics with square brackets, []
+
+  ```rs
+  fn main() {
+      log "hello, world!"
+  }
+
+  fn max(int x, int y)-> int {
+      if (x > y) {
+          ret x;
+      } else {
+          ret y;
+      }
+  }
+
+  obj counter(int i) {
+      fn incr() {
+          i += 1;
+      }
+
+      fn get()-> int {
+          ret i
+      }
+  }
+
+  fn main() {
+      auto c = counter(10);
+      c.incr();
+      log c.get()
+  }
+
+  obj swap[T](tup(T, T), pair)-> tup(T, T) {
+      ret tup(pair._1, pair._0);
+  }
+
+  fn main(){
+      auto str_pair = tup("hi", "there");
+      auto int_pair = tup(10, 12);
+
+      str_pair = swap[str](str_pair);
+      int_pair = swap[int](int_pair);
+  }
+  ```
+
+Popular ideology
+
+- Memory Safety, no wild pointers
+- Typestate system, no null pointers
+- Mutability control, immutable by default
+- Side-effect control, pure by default
+  - You can break the rules
+  - You have to authorize where and how
+- Used Garbage collector
+
+In 2009, Mozilla decided to officially sponsor Rust
+
+## Rust is not all Sugar
+
+Rust is not a perfect language. In fact, Graydon wrote:
+
+<BlockQuote
+  content={`More specifically...Rust lacks: 
+ the clang importer, reflection, a repl and playgrounds, runtime-dynamic generics, keyword arguments, cleanly-integrated reference-typed classes, user-extensible pattern matching, simplified local borrow-like alias control, compiler-supported ARC, generally much lower cognitive load).`}
+  author={`Graydon, 2018`}
+></BlockQuote>
+
+To be fair, Rust has since implemented most of these lacking features. For example, if you are not popular with any aforementioned, a repl and playground should make a reminder. Although it has implemented many of the features it is lacking in 2018, it is yet not close to perfect.
+
+## Obvious Change: Then and Now
+
+```rust
+rec(task task, chan[T] chan)
+
+// where task and chan are keywords that the language knows about
+```
+
+Similar thing would have been written as below in today's Rust
+
+```Rust
+use std::thread:task;
+use std::sync::mps:chan;
+
+struct Foo<T> {
+    thread: task,
+    chan: chan
+}
+```
+
+Another thing Rust was famous for in this era was pointers.
+
+```Rust
+let x = @5 // Garbage collector pointer
+let y = ~5 // Unique pointer
+let z = &5 // borrowed pointer
+```
+
+These would have been written as
+
+```Rust
+let y = Box::new(5); // box
+let z = &5; // reference
+```
+
+The type system year also had additions that were not particularly type specific like Cargo and Crates.io
+
+## References
+
+https://old.reddit.com/r/rust/comments/7qels2/i_wonder_why_graydon_hoare_the_author_of_rust/
+
+https://www.technologyreview.com/2023/02/14/1067869/rust-worlds-fastest-growing-programming-language/
+
+https://users.rust-lang.org/t/rust-objectives-observation/10348
+

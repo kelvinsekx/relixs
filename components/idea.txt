@@ -1,0 +1,24 @@
+## Topic Idea
+
+# How Rust is Different
+
+"""
+With Rust, Hoare aimed to create a language that split the difference between these approaches. It wouldn’t require programmers to manually figure out where in memory they were putting data; Rust would do that. But it would impose many strict rules on how data could be used or copied inside a program. You’d have to learn those coding rules, which would be more onerous than the ones in Python or JavaScript. Your code would be harder to write, but it’d be “memory safe”—no fears that you’d accidentally inserted lethal memory bugs
+
+# You shouldn't own it
+
+“ownership” system so that a piece of data can be referred to by only one variable
+
+Miscellaneous Quotes
+
+""" Many of the tricks Rust employed weren’t new ideas: “They’re mostly decades-old research,” says Manish Goregaokar, who runs Rust’s developer-­tools team and worked for Mozilla in those early years
+
+""" As the team improved the memory-management system, Rust had increasingly little need for its own garbage collector—and by 2013, the team had removed it
+
+""" Along the way, the Rust community was also building a culture that was known for being unusually friendly and open to newcomers. “No one ever calls you a noob,” says Nell Shamrell-Harrington, a principal engineer at Microsoft who at the time worked on Rust at Mozilla. “No question is considered a stupid question.”
+
+> > Sholsman podcast and the speaker died a few years ago.
+
+""" By 2015, the team was obsessed with finally releasing a “stable” version of Rust, one reliable enough for companies to use to make software for real customers. It had been six years since Mozilla took Rust under its wing,
+
+""" Perhaps most crucially for the cloud computing giant, a study of Rust-based code found it runs so efficiently that it uses half as much electricity as a similar program written in Java, a language commonly used at AWS. “So I could create a data center that runs 2X the workloads that I have today,” Miller says
