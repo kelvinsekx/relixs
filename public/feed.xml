@@ -4,7 +4,7 @@
         <description><![CDATA[kelvinsekx]]></description>
         <link>https://yoursite.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 02 Oct 2023 08:57:55 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Oct 2023 09:50:46 GMT</lastBuildDate>
         <atom:link href="https://yoursite.com/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Markdown Examples]]></title>
@@ -26,9 +26,11 @@
         </item>
         <item>
             <title><![CDATA[The History of Rust]]></title>
+            <description><![CDATA[The last read on rust history]]></description>
             <link>/posts/rust-history</link>
             <guid isPermaLink="true">/posts/rust-history</guid>
             <category><![CDATA[Rust]]></category>
+            <dc:creator><![CDATA[Kelvinsekx]]></dc:creator>
             <pubDate>Thu, 18 Mar 2021 00:00:00 GMT</pubDate>
         </item>
     </channel>
