@@ -6,8 +6,8 @@ const matter = require("gray-matter");
 async function generate() {
   const feed = new RSS({
     title: "kelvinsekx",
-    site_url: "https://yoursite.com",
-    feed_url: "https://yoursite.com/feed.xml",
+    site_url: "https://relix-nine.vercel.app",
+    feed_url: "https://relix-nine.vercel.app/feed.xml",
   });
 
   const posts = await fs.readdir(
