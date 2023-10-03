@@ -4,7 +4,7 @@ export default function Document() {
   const meta = {
     title: "Don't bite me, when you see it is lazy",
     description: "It is supposed to be everything about Rust and Elixir, but I am Lazy.",
-    image: "./../public/images/kelvin.png",
+    image: "/images/kelvin.png",
   };
 
   return (

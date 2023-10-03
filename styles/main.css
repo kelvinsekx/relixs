@@ -41,6 +41,7 @@ body {
   font-variation-settings: "wght" 450;
   font-variant: common-ligatures contextual;
   letter-spacing: -0.02em;
+  word-break: break-all !important;
 }
 
 @media screen and (min-device-pixel-ratio: 1.5),
@@ -67,88 +68,4 @@ img.next-image {
   color: #69778c;
 }
 
-.body {
-  width: 80vw;
-  margin: 0 auto;
-}
-
-.body p {
-  margin: 0.6rem 0;
-}
-
-.header {
-  font-size: 4rem;
-  line-height: 4rem;
-  margin: 1rem 0;
-  text-align: center;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 1rem;
-  gap: 1rem;
-}
-
-.hookcontent {
-  width: 100%;
-}
-
-.cardBody {
-  width: 80vw;
-  align-self: center;
-}
-
-.card {
-  background-color: var(--color-seaform);
-  width: inherit;
-  border-radius: 10px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 0;
-}
-
-/* cardBox has no content */
-.cardBox {
-  height: 25rem;
-  width: inherit;
-  background-color: var(--color-fern);
-  opacity: 0.5;
-  position: absolute;
-  transform: rotate(3deg) translate(-1px, 10px);
-}
-
-@media only screen and (min-width: 960px) {
-  .body {
-  }
-
-  .body p {
-  }
-
-  .header {
-  }
-
-  .main {
-    flex-direction: row;
-  }
-
-  .hookcontent {
-    width: 40%;
-  }
-
-  .cardBody {
-    width: 30rem;
-    min-height: 25rem;
-    padding: 0px;
-  }
-
-  .card {
-  }
-
-  .cardBox {
-  }
-}
 
