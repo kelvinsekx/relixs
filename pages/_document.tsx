@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   const meta = {
-    title: "Don't bite me, this blog is lazy",
+    title: "Don't bite me, when you see it is lazy",
     description: "It is supposed to be everything about Rust and Elixir, but I am Lazy.",
     image: "./../public/images/kelvin.png",
   };
