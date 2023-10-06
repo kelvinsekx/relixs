@@ -10,7 +10,7 @@ export const BlockQuote = ({ author, citedFrom, content }: BlockProps) => (
     <p className="bg-slate-200 !text-slate-800 py-3 rounded-sm ">{content}</p>
     <footer>
       - {author}
-      <cite>{citedFrom}</cite>
+      <cite className='break-words'>{citedFrom}</cite>
     </footer>
   </blockquote>
 );

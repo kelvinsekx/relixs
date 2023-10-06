@@ -1,0 +1,29 @@
+---
+title: Ownership and Borrowing in 2 minutes
+date: 2023-10-06
+description: The last read on rust history
+tag: Rust
+author: Kelvinsekx
+---
+
+
+# The Concept of Ownership and Borrowing
+
+<p className="text-center">Sit tight, you're in the middle!!</p>
+
+One of the the benevolence factors that has helped Rust popularity is the novel concept of ownership and borrowing - #it is nothing new on papers.
+Rust falls among the leading industrially used language to successfully and wholesomely implement this feature.
+
+There have always been two extremes.
+
+When it concerns memory management, there have been two extremes: Manual Memory Management - MMM - and Garbage Collection - GC - (Pardonably, Automatic Memory Management).
+
+<p className="text-center">Rust sits in between, but completely dishing GC</p>
+
+[Garbage Collection is an automatic effort that replaces manual memory management for devs](https://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29). It sniffs for unused objects in the heap memory and recollects them - free them, at intervals unlike MMM where programmers specify what objects are de-allocated and when.
+
+MMM can be tedious and unforgiving.
+
+In the beginning stages, Rust combined GC and its original Ownership and Borrowing algorithm similar to [Ada](https://ada-lang.io/), [Modula-3](https://en.wikipedia.org/wiki/Modula-3) etc
+
+Today, Rust do not run on GC any longer, but its ownership and borrowing algorithm alone. **However, with the super power to opt-in to de-allocating memory whenever you want to - with the drop function. 99% of time when you do this, you shouldn't**.
