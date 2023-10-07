@@ -4,8 +4,17 @@
         <description><![CDATA[kelvinsekx]]></description>
         <link>https://relix-nine.vercel.app</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 06 Oct 2023 15:14:11 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Oct 2023 04:05:00 GMT</lastBuildDate>
         <atom:link href="https://relix-nine.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Ownership and Borrowing in 2 minutes]]></title>
+            <description><![CDATA[2 mins abstract to the memory management algo that guides Rust]]></description>
+            <link>/posts/2023-ownership-and-borrowing-sweet-in-the-middle</link>
+            <guid isPermaLink="true">/posts/2023-ownership-and-borrowing-sweet-in-the-middle</guid>
+            <category><![CDATA[Rust]]></category>
+            <dc:creator><![CDATA[Kelvinsekx]]></dc:creator>
+            <pubDate>Fri, 06 Oct 2023 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[The History of Rust]]></title>
             <description><![CDATA[The last read on rust history]]></description>
@@ -13,7 +22,7 @@
             <guid isPermaLink="true">/posts/rust-history</guid>
             <category><![CDATA[Rust]]></category>
             <dc:creator><![CDATA[Kelvinsekx]]></dc:creator>
-            <pubDate>Mon, 02 Oct 2023 00:00:00 GMT</pubDate>
+            <pubDate>Tue, 03 Oct 2023 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
