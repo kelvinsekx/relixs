@@ -22,3 +22,7 @@ Miscellaneous Quotes
 """ By 2015, the team was obsessed with finally releasing a “stable” version of Rust, one reliable enough for companies to use to make software for real customers. It had been six years since Mozilla took Rust under its wing,
 
 """ Perhaps most crucially for the cloud computing giant, a study of Rust-based code found it runs so efficiently that it uses half as much electricity as a similar program written in Java, a language commonly used at AWS. “So I could create a data center that runs 2X the workloads that I have today,” Miller says
+
+
+## Tools
+Excalidraw
